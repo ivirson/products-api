@@ -1,0 +1,121 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Products API",
+    "collectionId": "4ffa54ca-bf7d-4c4c-8ca1-42d9cdcc3a0f",
+    "dateExported": "2024-05-06T17:42:43.020Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fb60fbb2-d170-48de-93cb-b08ee3617045",
+            "colId": "4ffa54ca-bf7d-4c4c-8ca1-42d9cdcc3a0f",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3000/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-06T14:14:47.425Z",
+            "modified": "2024-05-06T14:22:16.567Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Fulano de Tal\",\n  \"profession\": \"Dev\",\n  \"birthDate\": \"2000-01-01\",\n  \"documentNumber\": \"01234567890\",\n  \"email\": \"ivirson@email.com\",\n  \"password\": \"SenhaForte\",\n  \"phone\": \"71985749625\",\n  \"income\": 1000\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "85ae6afc-aac4-4be0-bacd-abd9065600ef",
+            "colId": "4ffa54ca-bf7d-4c4c-8ca1-42d9cdcc3a0f",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-06T14:26:56.348Z",
+            "modified": "2024-05-06T14:27:28.631Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"ivirson@email.com\",\n  \"password\": \"SenhaForte\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2d76b165-e42a-4436-bcaa-d67b3f26bcda",
+            "colId": "4ffa54ca-bf7d-4c4c-8ca1-42d9cdcc3a0f",
+            "containerId": "",
+            "name": "create product",
+            "url": "http://localhost:3000/products",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-06T14:47:17.068Z",
+            "modified": "2024-05-06T17:42:29.595Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Iphone 15\",\n  \"description\": \"Celular mais top ainda\",\n  \"price\": 15000,\n  \"qty\": 200,\n  \"image\": \"https://www.google.com/imgres?q=iphone%2015&imgurl=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-15-pro-finish-select-202309-6-7inch-blacktitanium_AV1%3Fwid%3D5120%26hei%3D2880%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DVW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZEVRNFN1aThHM1R3Z1g3RUVXYlJtU0NUcEx1KzZ4TU5aSmJ4VzBKZWFPSGppOHgxUjM1bG1hRnArQXQ1elR1Rk13Qjhvd1BnZkhnUFFYU1JJMGh5alE5MDdNZE9taTJHQm5YeTNRMlpyNWxYNXFNVzc5YkZmK2I4YzJ4ZndkZUdjPQ%3D%3D%26traceId%3D1&imgrefurl=https%3A%2F%2Fwww.apple.com%2Fbr%2Fshop%2Fbuy-iphone%2Fiphone-15-pro%2Ftela-de-6%2C7-polegadas-512gb-tit%25C3%25A2nio-preto&docid=Zug88VXe4nXssM&tbnid=wulXIGBik6FnCM&vet=12ahUKEwil44zg5fKFAxVLppUCHVV8AmQQM3oECD4QAA..i&w=5120&h=2880&hcb=2&ved=2ahUKEwil44zg5fKFAxVLppUCHVV8AmQQM3oECD4QAA\",\n  \"tags\": [\"tech\", \"phones\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8e04ca3a-8fdf-4362-8cb9-b413269fcda1",
+            "colId": "4ffa54ca-bf7d-4c4c-8ca1-42d9cdcc3a0f",
+            "containerId": "",
+            "name": "get product by id",
+            "url": "http://localhost:3000/products/3961048c-9242-45a2-92b3-11d24023cd5b",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-06T14:50:56.290Z",
+            "modified": "2024-05-06T17:42:24.808Z",
+            "headers": []
+        },
+        {
+            "_id": "512a23a1-0caa-4226-9532-394035b6af73",
+            "colId": "4ffa54ca-bf7d-4c4c-8ca1-42d9cdcc3a0f",
+            "containerId": "",
+            "name": "get products",
+            "url": "http://localhost:3000/products",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-05-06T14:52:23.945Z",
+            "modified": "2024-05-06T17:42:15.673Z",
+            "headers": []
+        },
+        {
+            "_id": "7858b8ae-3bb3-4818-bef7-35f29d9d35b3",
+            "colId": "4ffa54ca-bf7d-4c4c-8ca1-42d9cdcc3a0f",
+            "containerId": "",
+            "name": "update product",
+            "url": "http://localhost:3000/products/3961048c-9242-45a2-92b3-11d24023cd5b",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-05-06T14:52:59.352Z",
+            "modified": "2024-05-06T17:42:34.618Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"description\": \"Celular mais top\",\n  \"qty\": 100\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a46f67f3-f9fa-4c98-b417-f5db90a905b3",
+            "colId": "4ffa54ca-bf7d-4c4c-8ca1-42d9cdcc3a0f",
+            "containerId": "",
+            "name": "delete product",
+            "url": "http://localhost:3000/products/3961048c-9242-45a2-92b3-11d24023cd5b",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-05-06T14:54:27.772Z",
+            "modified": "2024-05-06T17:42:38.308Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyZGVjYjUxMS01YmM0LTRmYzgtYmRlMy01YmMwYmQzNjAzOGMiLCJlbWFpbCI6Iml2aXJzb25AZW1haWwuY29tIiwiaWF0IjoxNzE1MDE3MjkyLCJleHAiOjE3MTUwMjQ0OTJ9.ZcKVs8r6RcBqONQbVKpx9qf7bllmU4fvoTjuMnx6enE"
+        }
+    },
+    "ref": "qf26F73N-KLFU5FDvgsqSENms4DaHMSdu89on-QMIjlTQhoKYzQPkY2rDlZbQOF3vgvomkTDi2xtNT22EHqfsw"
+}
