@@ -1,0 +1,180 @@
+{
+    "info": {
+        "_postman_id": "2e34e0a4-0b3a-47fb-82eb-669acf17df44",
+        "name": "Products API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/auth/register",
+                    "path": [
+                        "auth",
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Fulano de Tal\",\n  \"profession\": \"Dev\",\n  \"birthDate\": \"2000-01-01\",\n  \"documentNumber\": \"01234567890\",\n  \"email\": \"ivirson@email.com\",\n  \"password\": \"SenhaForte\",\n  \"phone\": \"71985749625\",\n  \"income\": 1000\n}"
+                }
+            }
+        },
+        {
+            "name": "login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/auth/login",
+                    "path": [
+                        "auth",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\": \"ivirson@email.com\",\n  \"password\": \"SenhaForte\"\n}"
+                }
+            }
+        },
+        {
+            "name": "create product",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/products",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Iphone 15\",\n  \"description\": \"Celular mais top ainda\",\n  \"price\": 15000,\n  \"qty\": 200,\n  \"image\": \"https://www.google.com/imgres?q=iphone%2015&imgurl=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F1%2Fas-images.apple.com%2Fis%2Fiphone-15-pro-finish-select-202309-6-7inch-blacktitanium_AV1%3Fwid%3D5120%26hei%3D2880%26fmt%3Dp-jpg%26qlt%3D80%26.v%3DVW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZEVRNFN1aThHM1R3Z1g3RUVXYlJtU0NUcEx1KzZ4TU5aSmJ4VzBKZWFPSGppOHgxUjM1bG1hRnArQXQ1elR1Rk13Qjhvd1BnZkhnUFFYU1JJMGh5alE5MDdNZE9taTJHQm5YeTNRMlpyNWxYNXFNVzc5YkZmK2I4YzJ4ZndkZUdjPQ%3D%3D%26traceId%3D1&imgrefurl=https%3A%2F%2Fwww.apple.com%2Fbr%2Fshop%2Fbuy-iphone%2Fiphone-15-pro%2Ftela-de-6%2C7-polegadas-512gb-tit%25C3%25A2nio-preto&docid=Zug88VXe4nXssM&tbnid=wulXIGBik6FnCM&vet=12ahUKEwil44zg5fKFAxVLppUCHVV8AmQQM3oECD4QAA..i&w=5120&h=2880&hcb=2&ved=2ahUKEwil44zg5fKFAxVLppUCHVV8AmQQM3oECD4QAA\",\n  \"tags\": [\"tech\", \"phones\"]\n}"
+                }
+            }
+        },
+        {
+            "name": "get product by id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/products/3961048c-9242-45a2-92b3-11d24023cd5b",
+                    "path": [
+                        "products",
+                        "3961048c-9242-45a2-92b3-11d24023cd5b"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "get products",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/products",
+                    "path": [
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "update product",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:3000/products/3961048c-9242-45a2-92b3-11d24023cd5b",
+                    "path": [
+                        "products",
+                        "3961048c-9242-45a2-92b3-11d24023cd5b"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"description\": \"Celular mais top\",\n  \"qty\": 100\n}"
+                }
+            }
+        },
+        {
+            "name": "delete product",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:3000/products/3961048c-9242-45a2-92b3-11d24023cd5b",
+                    "path": [
+                        "products",
+                        "3961048c-9242-45a2-92b3-11d24023cd5b"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyZGVjYjUxMS01YmM0LTRmYzgtYmRlMy01YmMwYmQzNjAzOGMiLCJlbWFpbCI6Iml2aXJzb25AZW1haWwuY29tIiwiaWF0IjoxNzE1MDE3MjkyLCJleHAiOjE3MTUwMjQ0OTJ9.ZcKVs8r6RcBqONQbVKpx9qf7bllmU4fvoTjuMnx6enE",
+                "type": "string"
+            }
+        ]
+    }
+}
